@@ -3,9 +3,5 @@ import React, { useEffect, useState } from 'react';
 import { fetchBlogs } from '../../services/blog';
 
 export default function Main() {
-    
+
 }
-
-    
-    
-
