@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { fetchBlogs } from '../services/blogs';
+import { fetchBlogs } from '../services/blog';
 import { useEffect } from 'react';
 
 import BlogCard from '../components/BlogCard/BlogCard';
@@ -15,6 +15,11 @@ export default function Main() {
         };
         fetchData();
     }, []);
-
-
-}
+    return (
+        <main>
+            {blogs.map((blog) => (
+                <BlogCard key={blog.id} {...blog} />
+            ))}
+        </main>
+    );
+} 
