@@ -15,6 +15,7 @@ export default function Main() {
         };
         fetchData();
     }, []);
+
     return (
         <main>
             {blogs.map((blog) => (
